@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Subway Styles</title>
+    <link rel="stylesheet" href="css/bootstrap_slate.min.css">
+    <link rel="stylesheet" href="css/Subway.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body ng-app="subwayStylesModule">
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Subway Styles</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" ng-controller="stylesController">
+        <!--App begin-->
+
+        <div class="subwaySignLarge">
+            <div class="signStripe"></div>
+            <div class="signContent">
+                <h1>
+                    Subway Styles
+                </h1>
+                <p>CSS3 Implementation of the NYCT Subway Route Symbols</p>
+            </div>
+        </div>
+
+        <div class="subwaySignLarge">
+            <div class="signStripe"></div>
+            <div class="signContent">
+                <h2>
+                    Large Heading
+                </h2>
+                <p>Left-aligned heading, two lines cleanly wrap.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-lg-6" ng-repeat="subwayLine in subwayLines">
+                <div class="subwaySignLarge">
+                    <div class="signStripe"></div>
+                    <div class="signContent">
+                        <span class="subwayLineLargeLeft _{{subwayLine.Line}}">{{subwayLine.Line}}</span>
+                        <h2 class="subwayLineHeading">
+                            {{subwayLine.Name}}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subwaySignLarge">
+            <div class="signStripe"></div>
+            <div class="signContent">
+                <h2>
+                    Medium Heading
+                </h2>
+                <p>Left-aligned heading, two lines cleanly wrap.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6" ng-repeat="subwayLine in subwayLines">
+                <div class="subwaySignLarge">
+                    <div class="signStripe"></div>
+                    <div class="signContent">
+                        <span class="subwayLineMeduimLeft _{{subwayLine.Line}}">{{subwayLine.Line}}</span>
+                        <h3 class="subwayLineHeadingMedium">
+                            {{subwayLine.Name}}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="subwaySignLarge">
+            <div class="signStripe"></div>
+            <div class="signContent">
+                <h2>
+                    Small Sign and Text
+                </h2>
+                <p>Text is floated to the right.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="subwayLine in subwayLines">
+                <div class="subwaySign">
+                    <div class="signStripe"></div>
+                    <div class="signContent">
+                        <span class="subwayLineSmall _{{subwayLine.Line}}">{{subwayLine.Line}}</span>
+                        <span class="pull-right ng-binding">
+                            {{subwayLine.Name}}
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subwaySignLarge">
+            <div class="signStripe"></div>
+            <div class="signContent">
+                <h2>
+                    Advisories
+                </h2>
+                <p>Small heading with lines appearing in advisory text.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6" ng-repeat="subwayLine in subwayLines">
+                <div class="subwaySign">
+                    <div class="signStripe"></div>
+                    <div class="signContent">
+                        <span class="subwayLineSmall _{{subwayLine.Line}}">{{subwayLine.Line}}</span>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Advisory
+                        <!-- ngIf: model.advisory.Time != '00:00' -->
+                        <p class="advisory-description">Advisory information for
+                            <span class="subwayLineSmall _{{subwayLine.Line}} subwayLineAdvisory">{{subwayLine.Line}}</span>
+                            is included here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <hr />
+        <footer>
+            <p>&copy; juniuslabs</p>
+        </footer>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

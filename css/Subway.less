@@ -1,0 +1,363 @@
+﻿
+@broadwayLine: #FCCC0A;
+@eighthAvenueLine: #0039A6;
+@sixthAvenueLine: #FF6319;
+@crosstownLine: #6CBE45;
+@nassauLine: #996633;
+@canarsieLine: #A7A9AC;
+@shuttle: #808183;
+@seventhAvenueLine: #EE352E;
+@lexingtonAvenueLine: #00933C;
+@flushingLine: #B933AD;
+@statenIslandRailroad: #1E3491;
+@secondAvenueLine: #00ADD0;
+
+.subwayLine {
+    box-sizing: padding-box;
+    display: inline-block;
+    border-radius: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.subwayLineSmall {
+    .subwayLine;
+    width: 25px;
+    height: 25px;
+    font-size: 14px; //TODO: 15 was original, 14 looks slightly better..
+    padding: 2px 0 0 0;
+    margin: 5px 0px 5px 5px;
+}
+
+.subwayLineAdvisory{
+    margin:0px;
+    font-size:11px;
+    width: 18px;
+    height:18px;
+}
+
+.advisory-description {
+    margin-left: 10px;
+}
+
+.subwayLineSmallLeft {
+    .subwayLineSmall;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.subwayLineMedium {
+    .subwayLine;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    padding: 3px 0 0 0;
+    margin: 5px 5px 5px 5px;
+}
+
+.scheduleHeading {
+    margin: 0px 0px 20px 0px;
+    padding: 6px 0 0 0;
+}
+
+.subwayLineMeduimLeft {
+    .subwayLineMedium;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+/*TODO: abstract "large, medium, small" etc sizes into variables*/
+.mtaLogoLarge {
+    width: 59px;
+    height: 59px;
+    margin: -14px 5px 5px 5px;
+    background-color: #083AA3;
+    border-radius: 500px;
+}
+
+.mtaLogoMedium {
+    .mtaLogoLarge;
+    width: 35px;
+    height: 35px;
+}
+
+
+.subwayLineLarge {
+    .subwayLine;
+    width: 55px;
+    height: 55px;
+    font-size: 36px;
+    padding: 2px 0 0 0;
+    margin: 5px 5px 5px 5px;
+}
+
+.subwayLineLargeLeft {
+    .subwayLineLarge;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.subwayLineHeading {
+    margin: 10px 0 20px 0;
+}
+
+.subwayLineHeadingMedium {
+    margin: 5px 0 20px 0;
+}
+
+._A, ._C, ._E {
+    background-color: @eighthAvenueLine;
+}
+
+._B, ._D, ._F, ._M {
+    background-color: @sixthAvenueLine;
+}
+
+._G {
+    background-color: @crosstownLine;
+}
+
+._J, ._Z {
+    background-color: @nassauLine;
+}
+
+._L {
+    background-color: @canarsieLine;
+}
+
+._N, ._Q, ._R, ._W {
+    background-color: @broadwayLine;
+    color: black;
+}
+
+._FS, ._H, ._GS {
+    background-color: @shuttle;
+    color:@shuttle;
+    position:relative;
+}
+
+._1, ._2, ._3 {
+    background-color: @seventhAvenueLine;
+}
+
+._4, ._5, ._6 {
+    background-color: @lexingtonAvenueLine;
+}
+
+._7 {
+    background-color: @flushingLine;
+}
+
+._T {
+    background-color: @secondAvenueLine;
+}
+
+._7X, ._6X, ._5X {
+    position: relative;
+    margin: 5px 2px 5px 7px;
+    color:black;
+}
+
+.expressBeforeBase {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:white;
+}
+
+._FS::before, ._H::before, ._GS::before {
+    .expressBeforeBase;
+    content: "S";
+}
+
+._SI, ._S {
+    background-color: @statenIslandRailroad;
+    color:@statenIslandRailroad;
+    position:relative;
+}
+
+._SI::before, ._S::before {
+    .expressBeforeBase;
+    content:"SIR";
+    font-family:'Arial Narrow', Arial;
+}
+
+._5X::before {
+    .expressBeforeBase;
+    content: "5";
+}
+
+._6X::before {
+    .expressBeforeBase;
+    content: "6";
+}
+
+._7X::before {
+    .expressBeforeBase;
+    content: "7";
+}
+
+.expressAfterBase {
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    transform: rotate(45deg);
+    top: 0px;
+    bottom:0px;
+    left: 0px;
+    right:0px;
+    z-index: 0;
+    margin:auto;
+}
+
+._5X::after {
+    .expressAfterBase;
+    background-color: @lexingtonAvenueLine;
+}
+
+._6X::after {
+    .expressAfterBase;
+    background-color: @lexingtonAvenueLine;
+}
+
+._7X::after {
+    .expressAfterBase;
+    background-color: @flushingLine;
+}
+
+
+
+.stationList {
+    /*padding: 0 0 0 15px;*/
+}
+
+.subwayList {
+    margin-left: 0px;
+    padding-left: 10px;
+}
+
+.subwayList li {
+    list-style: none;
+}
+
+.subwaySignBase {
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.subwaySign {
+    .subwaySignBase;
+    margin: 5px 0px 5px 0px;
+    padding-bottom: 5px;
+
+    .signContent {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .signStripe {
+        border-bottom: 1px solid white;
+        padding-top: 1px;
+        padding-bottom: 3px;
+    }
+}
+
+.subwaySign a {
+    color: white;
+}
+
+.subwaySignLarge {
+    .subwaySignBase;
+    margin: 5px 0px 5px 0px;
+    padding-bottom: 9px;
+
+    .signContent {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .signStripe {
+        border-bottom: 2px solid white;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+}
+
+.subwaySignLarge a {
+    color: white;
+}
+
+.scheduleEntry {
+    font-size: 13px;
+}
+
+.departureTimeEntry {
+    font-size: 9px;
+    font-weight: normal;
+}
+
+.signAnchorWrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.mapHolder {
+    height: 400px;
+}
+
+.mapInstance {
+    width: 100%;
+    height: 100%;
+}
+
+.signInput {
+    position:relative;
+    background-color:transparent;
+    color: white;
+    border: 0px;
+    width: 100%;
+    max-width:100%;
+    height: 100%;
+    padding: 2px;
+    font-size: 15px;
+    z-index:10;
+}
+
+.signInput:focus {
+    outline: none;
+    border: 0px;
+}
+
+.signSearch {
+    position:absolute;
+    top:2px; right:0px;
+    z-index:0;
+    font-size: 15px;
+}
+
+.stopFilter {
+    position: relative;
+}
+
+.signRoute{
+    float:left;
+}
+
+.signRouteDetails{
+    margin-left:40px;
+    min-height:35px;
+    padding-top:7px;
+}
+
+.signDirectionWrapper{
+    font-size: 15px;
+}

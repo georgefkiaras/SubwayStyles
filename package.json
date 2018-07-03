@@ -1,0 +1,18 @@
+{
+  "name": "subwaystyles",
+  "version": "1.0.0",
+  "description": "",
+  "author": "GeorgeF",
+  "repository": "Z",
+  "license": "GPL-1.0-or-later",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+      "start": "http-server"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-less": "^1.4.1"
+  }
+}
