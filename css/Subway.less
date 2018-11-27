@@ -12,7 +12,12 @@
 @statenIslandRailroad: #1E3491;
 @secondAvenueLine: #00ADD0;
 
+html{
+    font-size:14px;
+}
+
 .subwayLine {
+    position:relative;
     box-sizing: padding-box;
     display: inline-block;
     border-radius: 500px;
@@ -22,91 +27,81 @@
     text-align: center;
 }
 
-
-
 .subwayLineSmall {
     .subwayLine;
-    width: 25px;
-    height: 25px;
-    font-size: 14px; //TODO: 15 was original, 14 looks slightly better..
-    padding: 2px 0 0 0;
-    margin: 5px 0px 5px 5px;
+    width: 1.7857rem;
+    height: 1.7857rem;
+    font-size: 1rem;
+    padding: 0.142857rem 0 0 0;
+    margin: 0.35714rem 0rem 0.35714rem 0.35714rem;
 }
 
 .subwayLineAdvisory{
-    margin:0px;
-    font-size:11px;
-    width: 18px;
-    height:18px;
-}
-
-.advisory-description {
-    margin-left: 10px;
+    margin:0rem;
+    font-size:0.785714rem;
+    width: 1.28571rem;
+    height:1.28571rem;
 }
 
 .subwayLineSmallLeft {
     .subwayLineSmall;
     float: left;
-    margin: 0px 10px 0px 0px;
+    margin: 0rem 0.7142857rem 0rem 0rem;
 }
 
 .subwayLineMedium {
     .subwayLine;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    padding: 3px 0 0 0;
-    margin: 5px 5px 5px 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.428571rem;
+    padding: 0.21428571rem 0 0 0;
+    margin: 0.35714rem 0.35714rem 0.35714rem 0.35714rem;
 }
 
 .scheduleHeading {
-    margin: 0px 0px 20px 0px;
-    padding: 6px 0 0 0;
+    margin: 0rem 0rem 1.428571rem 0rem;
+    padding: 0.428571rem 0 0 0;
 }
 
 .subwayLineMeduimLeft {
     .subwayLineMedium;
     float: left;
-    margin: 0px 10px 0px 0px;
+    margin: 0rem 0.7142857rem 0rem 0rem;
 }
 
 /*TODO: abstract "large, medium, small" etc sizes into variables*/
 .mtaLogoLarge {
-    width: 59px;
-    height: 59px;
-    margin: -14px 5px 5px 5px;
+    width: 4.21428571rem;
+    height: 4.21428571rem;
+    margin: -1rem 0.35714rem 0.35714rem 0.35714rem;
     background-color: #083AA3;
     border-radius: 500px;
 }
 
 .mtaLogoMedium {
     .mtaLogoLarge;
-    width: 35px;
-    height: 35px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 
 .subwayLineLarge {
     .subwayLine;
-    width: 55px;
-    height: 55px;
-    font-size: 36px;
-    padding: 2px 0 0 0;
-    margin: 5px 5px 5px 5px;
+    width: 3.93rem;
+    height: 3.93rem;
+    font-size: 2.57rem;
+    padding: 0.142857rem 0 0 0;
+    margin: 0.35714rem 0.35714rem 0.35714rem 0.35714rem;
 }
 
 .subwayLineLargeLeft {
     .subwayLineLarge;
     float: left;
-    margin: 0px 10px 0px 0px;
+    margin: 0rem 0.7142857rem 0rem 0rem;
 }
 
 .subwayLineHeading {
-    margin: 10px 0 20px 0;
-}
-
-.subwayLineHeadingMedium {
-    margin: 5px 0 20px 0;
+    margin: 0.7142857rem 0 1.428571rem 0;
 }
 
 ._A, ._C, ._E {
@@ -158,7 +153,7 @@
 
 ._7X, ._6X, ._5X {
     position: relative;
-    margin: 5px 2px 5px 7px;
+    margin: 0.35714rem 0.142857rem 0.35714rem 0.5rem;
     color:black;
 }
 
@@ -210,10 +205,10 @@
     width: 80%;
     height: 80%;
     transform: rotate(45deg);
-    top: 0px;
-    bottom:0px;
-    left: 0px;
-    right:0px;
+    top: 0rem;
+    bottom:0rem;
+    left: 0rem;
+    right:0rem;
     z-index: 0;
     margin:auto;
 }
@@ -236,12 +231,12 @@
 
 
 .stationList {
-    /*padding: 0 0 0 15px;*/
+    /*padding: 0 0 0 1.071428571rem;*/
 }
 
 .subwayList {
-    margin-left: 0px;
-    padding-left: 10px;
+    margin-left: 0rem;
+    padding-left: 0.7142857rem;
 }
 
 .subwayList li {
@@ -258,17 +253,17 @@
 
 .subwaySign {
     .subwaySignBase;
-    margin: 5px 0px 5px 0px;
-    padding-bottom: 5px;
+    margin: 0.35714rem 0rem 0.35714rem 0rem;
+    padding-bottom: 0.35714rem;
 
     .signContent {
-        padding: 5px 5px 5px 5px;
+        padding: 0.35714rem 0.35714rem 0.35714rem 0.35714rem;
     }
 
     .signStripe {
-        border-bottom: 1px solid white;
-        padding-top: 1px;
-        padding-bottom: 3px;
+        border-bottom: 0.071428571rem solid white;
+        padding-top: 0.071428571rem;
+        padding-bottom: 0.21428571rem;
     }
 }
 
@@ -278,17 +273,17 @@
 
 .subwaySignLarge {
     .subwaySignBase;
-    margin: 5px 0px 5px 0px;
-    padding-bottom: 9px;
+    margin: 0.35714rem 0rem 0.35714rem 0rem;
+    padding-bottom: 0.6428571rem;
 
     .signContent {
-        padding: 15px 15px 15px 15px;
+        padding: 1.071428571rem 1.071428571rem 1.071428571rem 1.071428571rem;
     }
 
     .signStripe {
-        border-bottom: 2px solid white;
-        padding-top: 3px;
-        padding-bottom: 5px;
+        border-bottom: 0.142857rem solid white;
+        padding-top: 0.21428571rem;
+        padding-bottom: 0.35714rem;
     }
 }
 
@@ -297,11 +292,11 @@
 }
 
 .scheduleEntry {
-    font-size: 13px;
+    font-size: 0.928571rem;
 }
 
 .departureTimeEntry {
-    font-size: 9px;
+    font-size: 0.6428571rem;
     font-weight: normal;
 }
 
@@ -323,25 +318,25 @@
     position:relative;
     background-color:transparent;
     color: white;
-    border: 0px;
+    border: 0rem;
     width: 100%;
     max-width:100%;
     height: 100%;
-    padding: 2px;
-    font-size: 15px;
+    padding: 0.142857rem;
+    font-size: 1.071428571rem;
     z-index:10;
 }
 
 .signInput:focus {
     outline: none;
-    border: 0px;
+    border: 0rem;
 }
 
 .signSearch {
     position:absolute;
-    top:2px; right:0px;
+    top:0.142857rem; right:0rem;
     z-index:0;
-    font-size: 15px;
+    font-size: 1.071428571rem;
 }
 
 .stopFilter {
@@ -353,11 +348,501 @@
 }
 
 .signRouteDetails{
-    margin-left:40px;
-    min-height:35px;
-    padding-top:7px;
+    margin-left:2.8571428571rem;
+    min-height:2.5rem;
+    padding-top:0.5rem;
 }
 
 .signDirectionWrapper{
-    font-size: 15px;
+    font-size: 1.071428571rem;
+}
+
+
+/*Strip-map style layouts*/
+
+/*.routePatternItemHolder {
+    min-height: 55px;
+}*/
+
+.enRouteLine{
+    animation-name: fadeInHalf;
+    animation-duration: 2s;
+}
+
+.enRouteLine {
+    opacity: 0.5;
+}
+
+.arrivedLine{
+    animation-name:fadeInHalfToWhole;
+    animation-duration: 2s;
+}
+
+.blinkingLine {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.lineWithTime {
+    margin-bottom: 1.071428571rem;
+}
+
+.horizontalLineWithTime {
+    margin-left: 1.071428571rem;
+}
+
+.trainArrivalTimeHolder {
+    position: absolute;
+    width: 1.9285714rem;
+    height: 0.8571428571rem;
+    border: 0rem solid white;
+    text-align: center;
+    font-size: 0.571428571rem;
+    bottom: -1rem;
+    left: -0.142857rem;
+    color:white;
+}
+
+.terminalStartLine {
+    opacity: 0.3;
+    border-radius: 0rem;
+}
+
+.terminalEndLine {
+    border-radius: 0rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInHalf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeInHalfToWhole {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes inversePulse {
+    0% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.verticalMap {
+    border-left: 0.7142857rem solid;
+    margin: 0rem 0rem 0rem 48%;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.verticalMapTrains {
+    margin: -1.9285714rem 0rem 0rem -100%;
+    width: 100%;
+    display:block;
+    text-align:right;
+    padding-right: 2rem;
+}
+
+.mapConnectingRoutesHolder span {
+    margin-left: 0.35714rem;
+}
+
+.verticalMapAnchor {
+    display: block;
+}
+
+.verticalMapName {
+    display: inline-block;
+    margin: 0.5rem 0rem 0rem 0.35714rem;
+}
+
+.verticalMapNameOccupied {
+    .verticalMapName;
+}
+
+.stationBulletBase {
+    position: absolute;
+    top: 0.571428571rem;
+    left: -1.428571rem;
+    display: block;
+    content: " ";
+    width: 1.3571428571rem;
+    height: 1.3571428571rem;
+    border-radius: 500px;
+    border: 0.285714rem solid;
+    border-color: inherit;
+}
+
+.verticalMapName::before {
+    .stationBulletBase;
+    background-color: black;
+}
+
+.verticalMapNameOccupied::before {
+    .stationBulletBase;
+    background-color: yellow;
+    /*animation:fadeIn;
+    animation-duration:1s;*/
+}
+
+.verticalMap li {
+    margin: 0rem 0rem 0rem 0.35714rem;
+    padding: 0rem 0rem 0rem 0rem;
+    list-style-type: none;
+    min-height:3.071428571rem;
+    position:relative;
+    //border-bottom:0.071428571rem solid black; //this is necessary to keep the height consistent.  Not sure why...
+    display:block;
+    position:relative;
+}
+
+.expressLinesHolder .expressLineHolder:nth-child(2n) {
+    left: 0.35714rem;
+}
+
+.expressLineHolder {
+    position: absolute;
+    left: -0.35714rem;
+    border-left: 0.7142857rem solid;
+    border-color: inherit;
+    width: 0rem;
+    height: 100%;
+}
+
+.expressLineHolderTopTaper {
+    position: absolute;
+    top: -0.7142857rem;
+    left: -0.7142857rem;
+    /*border: 0.071428571rem solid red;*/
+    width: 0.7142857rem;
+    height: 0.7142857rem;
+    content: " ";
+    border-top-right-radius: 50px;
+}
+
+.expressLineHolderBottomTaper {
+    position: absolute;
+    bottom: -0.7142857rem;
+    left: -0.7142857rem;
+    border-bottom-right-radius: 50px;
+    /*border: 0.071428571rem solid red;*/
+    width: 0.7142857rem;
+    height: 0.7142857rem;
+    content: " ";
+}
+
+.expressStopBulletBase {
+    .stationBulletBase;
+    width: 2.071428571rem;
+    z-index: 1002;
+    background-color: black;
+    left: -1.78571428571rem;
+}
+
+.expressStop::before {
+    .expressStopBulletBase;
+    background-color: black;
+}
+
+.expressStop:nth-child(2n)::before {
+    .expressStopBulletBase;
+    background-color: black;
+    width: 2.78571rem;
+    left: -2.5rem;
+}
+
+.expressStopOccupied::before {
+    .expressStopBulletBase;
+    background-color: yellow;
+}
+
+.expressStopOccupied:nth-child(2n)::before {
+    .expressStopBulletBase;
+    background-color: yellow;
+    width: 2.78571rem;
+    left: -2.5rem;
+}
+
+/*horizontal strip map*/
+.horizontalMapSignContent {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.horizontalMapHolder {
+    width: 500px;
+    margin: 0rem 0rem 0rem -500px;
+    padding: 0rem 0rem 0rem 0rem;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    background-color:black;
+}
+
+.horizontalMapDirectionHolder {
+    position: absolute;
+    top: 2.5rem;
+    right: -11.071428571rem;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    color:white;
+    z-index:1000;
+}
+
+.horizontalMap {
+    .verticalMap;
+    border-right: 0.142857rem solid white;
+    border-right-color: white !important;
+    margin-right: 0.5rem;
+    padding: 2.071428571rem 0rem 10.71428571rem 0rem;
+}
+
+.horizontalMap .subwayLineSmall {
+    transform: rotate(90deg);
+}
+
+.horizontalMapTrains {
+    .verticalMapTrains;
+}
+
+.horizontalMapAnchor {
+    .verticalMapAnchor;
+}
+
+.horizontalMapName {
+    .verticalMapName;
+    transform: rotate(40deg);
+    transform-origin: center left;
+    padding-left:0.142857rem;
+    position:relative;
+    z-index:1000;
+}
+
+.selectedMapStation {
+    .horizontalMapName;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin: 0.2rem 0rem 0rem .4rem;
+    padding: 0rem 0.7rem 0.0rem 0.5rem;
+}
+
+.selectedVerticalMapStation {
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin: 0.4rem 0rem 0rem .4rem;
+    padding: 0rem 0.7rem 0.0rem 0.5rem;
+}
+
+.horizontalMapBulletHolder::before {
+    .stationBulletBase;
+    background-color: black;
+}
+
+.horizontalMapBulletHolderOccupied::before {
+    .stationBulletBase;
+    background-color: yellow;
+    /*animation: fadeIn;
+    animation-duration: 1s;*/
+    z-index: 1000;
+}
+
+.horizontalMap li {
+    margin: 0rem 0rem 0rem 0.35714rem;
+    padding: 0rem 0rem 0rem 0rem;
+    list-style-type: none;
+    min-height: 3.071428571rem;
+    position: relative;
+    border-bottom: 0.071428571rem solid black; //this is necessary to keep the height consistent.  Not sure why...
+    display: block;
+}
+
+
+._mapLineA, ._mapLineC, ._mapLineE {
+    border-color: @eighthAvenueLine;
+}
+
+._mapLineB, ._mapLineD, ._mapLineF, ._mapLineM {
+    border-color: @sixthAvenueLine;
+}
+
+._mapLineG {
+    border-color: @crosstownLine;
+}
+
+._mapLineJ, ._mapLineZ {
+    border-color: @nassauLine;
+}
+
+._mapLineL {
+    border-color: @canarsieLine;
+}
+
+._mapLineN, ._mapLineQ, ._mapLineR, ._mapLineW {
+    border-color: @broadwayLine;
+}
+
+._mapLineFS, ._mapLineH, ._mapLineGS {
+    border-color: @shuttle;
+
+}
+
+._mapLine1, ._mapLine2, ._mapLine3 {
+    border-color: @seventhAvenueLine;
+}
+
+._mapLine4, ._mapLine5, ._mapLine6 {
+    border-color: @lexingtonAvenueLine;
+}
+
+._mapLine7 {
+    border-color: @flushingLine;
+}
+
+._mapLineT {
+    border-color: @secondAvenueLine;
+}
+
+._mapLineBG_A, ._mapLineBG_C, ._mapLineBG_E {
+    background-color: @eighthAvenueLine;
+}
+
+._mapLineBG_B, ._mapLineBG_D, ._mapLineBG_F, ._mapLineBG_M {
+    background-color: @sixthAvenueLine;
+}
+
+._mapLineBG_G {
+    background-color: @crosstownLine;
+}
+
+._mapLineBG_J, ._mapLineBG_Z {
+    background-color: @nassauLine;
+}
+
+._mapLineBG_L {
+    background-color: @canarsieLine;
+}
+
+._mapLineBG_N, ._mapLineBG_Q, ._mapLineBG_R, ._mapLineBG_W {
+    background-color: @broadwayLine;
+}
+
+._mapLineBG_FS, ._mapLineBG_H, ._mapLineBG_GS {
+    background-color: @shuttle;
+
+}
+
+._mapLineBG_1, ._mapLineBG_2, ._mapLineBG_3 {
+    background-color: @seventhAvenueLine;
+}
+
+._mapLineBG_4, ._mapLineBG_5, ._mapLineBG_6 {
+    background-color: @lexingtonAvenueLine;
+}
+
+._mapLineBG_7 {
+    background-color: @flushingLine;
+}
+
+._mapLineBG_T {
+    background-color: @secondAvenueLine;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 1.428571rem;
+    margin-bottom: 0.71428571rem;
+}
+
+h1, .h1 {
+    font-size: 2.571428571rem;
+}
+
+h2, .h2{
+    font-size:2.1428571rem;
+}
+
+h3, .h3{
+    font-size:1.71428571rem;
+}
+
+h4, .h4{
+    font-size:1.28571rem;
+}
+
+h5, .h5{
+    font-size:0.71428571rem;
+}
+
+/*Live updates V2*/
+
+.liveUpdateV2Line{
+    margin-bottom: 0.5rem;
+}
+
+.advisoryPulseIndicator{
+    position:relative;
+    width:5.5rem;
+    height:5.5rem;
+    background-color: red;
+    border-radius:500px;
+    display:inline-block;
+    margin-top: 1rem;
+}
+
+.blinkingLineInverse {
+    animation-name: inversePulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.subwayLineMapTransfer {
+    .subwayLineAdvisory;
+    margin-right: 0.25rem;
+}
+
+.horizontalMap .subwayLineMapTransferHorizontal {
+    .subwayLineMapTransfer;
+    transform: rotate(0deg);
 }
